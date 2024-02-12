@@ -1,4 +1,4 @@
-Free Bootstrap 4 Resume/CV 
+Snake Water Gun Game
 
 Version:
 =======================================================================
@@ -6,11 +6,10 @@ v1.1
 
 Release Date:
 =======================================================================
-29 JULY 2020
+12 feb 2024
 
 Contact:
 =======================================================================
-Web: https://harshasaurusrex.github.io/devProfile/
-Email: trivediharsh.291@gmail.com
-Twitter: @harsh_gl
-
+Web: https://github.com/ShashiSahani/Snake-Water-Gun-Game
+Email: shashisahani496@gmail.com
+Linkedin: https://www.linkedin.com/in/shashi-sahani-b73140185/

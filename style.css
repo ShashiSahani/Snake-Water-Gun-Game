@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('./snake.png') center/contain no-repeat fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .container{
+    input,label,marquee{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+    }
+  }
+
+  
+  .content {
+    position: relative;
+    z-index: 1; /* Ensure content is above the background */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for content */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .form-control {
+    margin-top: 10px;
+  }
+  .highlighted-heading{
+    color: black;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000cc; /* Add a subtle shadow */
+    animation: heading 1s infinite alternate; /* Moving text animation */
+  }
+  .highlighted-text {
+    font-weight: bold;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add a subtle shadow */
+    animation: flashText 1s infinite alternate; /* Moving text animation */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 576px) {
+    body {
+      background-size: contain;
+      background-color: rgba(138, 173, 229, 0.5); 
+    }
+ 
+  }
+  
+  @media (min-width: 576px) and (max-width: 767px) {
+    body {
+      background-size: contain;
+    }
+  }
+  
+
+  @keyframes flashText {
+    from{
+        color: white;
+        text-shadow:  0 0 10px rgba(255, 255, 255, 0.8);
+    }
+    to {
+        color: yellow; /* Flashing color */
+        text-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Increased shadow for emphasis */
+      }
+  }
+
+  @keyframes heading {
+    from{
+        color: rgb(1, 1, 1);
+        text-shadow:  0 0 10px rgba(255, 255, 255, 0.8);
+    }
+    to {
+        color: yellow; /* Flashing color */
+        text-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Increased shadow for emphasis */
+      }
+  }
+   /* Marquee Animations */
+   
+
+  @keyframes marqueeLeftToRight {
+    0%{
+        transform: translate(-100%);
+    }
+    100%{
+        transform: translate(100%);
+    }
+    
+  }
+  @keyframes marqueeRightToLeft {
+    0%{
+        transform: translate(100%);
+    }
+    100%{
+        transform: translate(-100%);
+    }
+    
+  }

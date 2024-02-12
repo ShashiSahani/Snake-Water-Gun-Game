@@ -41,7 +41,12 @@ if(!userChoice){
 
 
   const result = determineWinner(userChoice, compChoice);
-document.getElementById('message').innerText=result
+ 
+ 
+ 
+  // Display the user's and computer's choices along with the result
+  const message = `Your choice: ${userChoice}\nComputer's choice: ${compChoice}\nResult: ${result}`;
+  document.getElementById('message').innerText = message;
 }
 
 function clearMessage(){

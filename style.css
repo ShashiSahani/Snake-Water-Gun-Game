@@ -50,7 +50,21 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add a subtle shadow */
     animation: flashText 1s infinite alternate; /* Moving text animation */
   }
-  
+
+  .highlighted-p {
+    font-weight: 900;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add a subtle shadow */
+    animation: p 1s infinite alternate; /* Moving text animation */
+  }
+  p{
+    color: black;
+    font-weight: 500;
+  }
+  #message{
+    color: black;
+    font-weight: 900; 
+  }
   /* Responsive Styles */
   @media (max-width: 576px) {
     body {
@@ -81,6 +95,16 @@ body {
   @keyframes heading {
     from{
         color: rgb(1, 1, 1);
+        text-shadow:  0 0 10px rgba(255, 255, 255, 0.8);
+    }
+    to {
+        color: yellow; /* Flashing color */
+        text-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Increased shadow for emphasis */
+      }
+  }
+  @keyframes p {
+    from{
+        color: rgb(178, 17, 17);
         text-shadow:  0 0 10px rgba(255, 255, 255, 0.8);
     }
     to {
